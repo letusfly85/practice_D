@@ -6,6 +6,18 @@ void main() {
 
 	writeln(int.init);
 
-	int b = void;
+	int _b = void;
+	writeln(_b);
+
+	bool b;
+
+	writeln(b);
+	b = !b;
+	writeln(b);
+
+	b = true;
+	writeln(b);
+
+	b = false;
 	writeln(b);
 }
