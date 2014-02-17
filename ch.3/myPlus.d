@@ -34,4 +34,31 @@ void main() {
     writeType!( int , "+", ulong)();
     writeType!( uint, "+", long)();
     writeType!( uint, "+", ulong)();
+
+    writeln();
+
+    writeType!( float,  "+", float)();
+    writeType!( float,  "+", ifloat)();
+    writeType!( ifloat, "+", ifloat)();
+
+    writeln();
+
+    writeType!( real,    "+", float)();
+    writeType!( real,    "+", ifloat)();
+    writeType!( ireal,   "+", ifloat)();
+
+    writeln();
+
+    writeType!( float,    "+", cfloat)();
+    writeType!( ifloat,   "+", cfloat)();
+    writeType!( cfloat,   "+", cfloat)();
+
+    writeln();
+
+    writeType!( ifloat, "*", ifloat)();
+
+    writeln();
+
+    writeType!( long,   "+", float)();
+    writeType!( long,   "+", ifloat)();
 }
