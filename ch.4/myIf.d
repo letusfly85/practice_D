@@ -6,7 +6,16 @@ void main()
     bool isThirsty = readln().chomp() == "Y";
 
     if (isThirsty) {
-        writeln("I see, here it is.");
+        writeln("Is there a auto drink machine?(Y/N)");
+        bool isPlaced = readln().chomp() == "Y";
+
+        if (isPlaced) {
+            writeln("I see.");
+        
+        } else {
+            writeln("I don't see.");
+        }
+
     
     } else {
         writeln("I see");
