@@ -11,4 +11,16 @@ void main()
     if (p) 
         writeln("p !is null == true");
 
+    S s;
+    if (s)
+        writeln("s.opCast!bool == true");
+
+}
+
+struct S
+{
+    bool opCast(T : bool)()
+    {
+        return true;
+    }
 }
