@@ -15,9 +15,20 @@ void main()
     if (s)
         writeln("s.opCast!bool == true");
 
+    U u;
+    if (u)
+        writeln("u.opCast!bool == true");
 }
 
 struct S
+{
+    bool opCast(T : bool)()
+    {
+        return true;
+    }
+}
+
+union U
 {
     bool opCast(T : bool)()
     {
