@@ -1,5 +1,6 @@
 import std.stdio, std.string;
 
+// main
 void main()
 {
     writeln("are you thirsty?(Y/N)---");
